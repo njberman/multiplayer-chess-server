@@ -1,5 +1,5 @@
 {
-  "name": "chess-server",
+  "name": "chess-multiplayer-server",
   "version": "1.0.0",
   "description": "Rest api with TS",
   "main": "index.js",
