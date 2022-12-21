@@ -1,7 +1,7 @@
 const ABC = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const NUMBERS = '0123456789';
 
-export default class Game {
+class Game {
   constructor(length, code) {
     if (!code) {
       this.code = [];
@@ -29,3 +29,5 @@ export default class Game {
     this.boardFen = fen;
   }
 }
+
+module.exports = Game;

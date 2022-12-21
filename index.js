@@ -1,9 +1,9 @@
-import express from 'express';
-import helmet from 'helmet';
-import Game from './game.js';
-import morgan from 'morgan';
-import bodyParser from 'body-parser';
-import cors from 'cors';
+const express = require('express');
+const helmet = require('helmet');
+const Game = require('./game');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const PORT = 3000;
 const CODE_LENGTH = 5;
@@ -101,4 +101,4 @@ app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
 );
 
-export default app;
+module.exports = app;
